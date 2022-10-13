@@ -1,0 +1,47 @@
+# myarray<- array(1:24, c(2,3,4))
+# myarray[1,2,4]
+# 
+# patientID<-c(1,2,3,4,5)
+# age<-c(25,34,28,52)
+# diabetes<-c("Type 1","Type 2","Type 3","Type 4","Type 5")
+# status<-c("Poor","Improved","Improved","Rich")
+# patientdata<-data.frame(patientID,age,diabetes,status)
+# patientdata
+
+
+
+patientID <-c(1,2,3,4)
+age<-c(25,34,28,52)
+diabetes<-c("Type1","Type2","Type3","Type4")
+status<-c("Poor","Improved","Improved","Rich")
+patientdata<-data.frame(patientID,age,diabetes,status)
+patientdata[1:3]
+patientdata[c(2,3),c(1,3)]
+patientdata$age
+
+new_column<-cbind(patientdata,"blood_group"<-c("O+","b+","b-","A+"))
+patientdata=new_column
+patientdata
+Item<-list("alu","badam")
+append(Item,"zishan")
+append(Item,"zishan",after=1)
+
+mydata<-data.frame(age=numeric(0),gender=character(0),weight=numeric(0))
+mydata<-edit(mydata)
+
+age<-factor(c("mid age","aged","old","anda"))
+age
+age[4]="old"
+age
+g<-"anda marka list"
+h<-c(25,78,90)
+j<-matrix(1:10,nrow=5)
+k<-c("one","two","three")
+mylist<-list(title=g,ages=h,j,k)
+mylist
+
+
+
+
+
+
