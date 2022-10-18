@@ -25,6 +25,7 @@ mydata$score=rowSds(as.matrix(mydata[,c(2,3)]))
 mydata$score
 sample_n(mydata,3)
 mydata2=select(mydata,Loan)
+remove=na.omit(mydata)#na jekhanease remove kore dibe
 
 colSums(is.na(mydata))#koita missing valuease
 which(is.na(mydata$intwerest_rate))#kotono rowteh missing value ase
